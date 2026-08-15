@@ -11,12 +11,10 @@ permissions:
   id-token: write
 
 jobs:
-
   build:
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -26,23 +24,17 @@ jobs:
           node-version: 22
 
       - name: Install Dependencies
-        working-directory: React/password-generator
+        working-directory: React-JS/password-generator
         run: npm install
 
       - name: Build React App
-        working-directory: React/password-generator
+        working-directory: React-JS/password-generator
         run: npm run build
-
-      - name: Prepare Website
-        run: |
-          mkdir -p dist/password-generator
-          cp -r React/password-generator/dist/* dist/password-generator/
 
       - name: Upload Website
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
-
+          path: React-JS/password-generator/dist
 
   deploy:
     environment:
@@ -54,7 +46,6 @@ jobs:
     needs: build
 
     steps:
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
