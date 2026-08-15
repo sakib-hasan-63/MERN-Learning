@@ -1,7 +1,10 @@
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
+
 export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
+
+  base: '/MERN-Learning/Password-Generator/',
 })
