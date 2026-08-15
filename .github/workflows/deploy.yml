@@ -24,17 +24,17 @@ jobs:
           node-version: 22
 
       - name: Install Dependencies
-        working-directory: React-JS/password-generator
+        working-directory: React-JS/Password-Generator
         run: npm install
 
       - name: Build React App
-        working-directory: React-JS/password-generator
+        working-directory: React-JS/Password-Generator
         run: npm run build
 
       - name: Upload Website
         uses: actions/upload-pages-artifact@v3
         with:
-          path: React-JS/password-generator/dist
+          path: React-JS/Password-Generator/dist
 
   deploy:
     environment:
