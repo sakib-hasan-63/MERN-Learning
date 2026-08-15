@@ -6,5 +6,5 @@ export default defineConfig({
     tailwindcss(),
   ],
 
-  base: '/MERN-Learning/Password-Generator/',
+ base: '/MERN-Learning/',
 })
