@@ -1,1 +1,4 @@
-console.log("Day 15");
+function day(num){
+    console.log(`Day -${num}`);
+}
+day(15);
