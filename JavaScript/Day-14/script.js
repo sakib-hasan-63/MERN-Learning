@@ -58,3 +58,15 @@ function isEven(arr){
 
 const myAns= arr.every(isEven);
 console.log(myAns);
+
+// Real World Use Case
+
+const userCart=[
+    {name : "sakib", age : 20 , city: "Lucknow" },
+    {name : "vali", age : 19 , city: "Bahraich" },
+    {name : "Tahseen", age : 23 , city: "Lucknow" }
+];
+
+const Myans = userCart.every((cartItem) => cartItem.age > 18);
+
+console.log(Myans);
