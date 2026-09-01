@@ -70,3 +70,13 @@ const userCart=[
 const Myans = userCart.every((cartItem) => cartItem.age > 18);
 
 console.log(Myans);
+
+// Some Method
+// If one number is Even its return true otherwise false
+
+const number = [1,3,5,7,9,4];
+
+ const ansss = number.some((number) => number % 2 === 0);
+
+ console.log(ansss);
+
