@@ -45,3 +45,16 @@ const users =[
 
 const findUser4 = users.find((user)=> user.userId === 4);
 console.log(findUser4);
+
+//Every method
+// It Return the true if all value is even
+// Otherwise its return False
+
+const arr = [10,20,6,4,2,8];
+
+function isEven(arr){
+    return (arr % 2 === 0);
+}
+
+const myAns= arr.every(isEven);
+console.log(myAns);
