@@ -9,3 +9,12 @@ const deleteItem = myarr.splice(1,2);
 console.log(`Deleted item ${deleteItem}`);
 
 console.log(myarr)
+
+// Insert
+
+const arr1 = [10,20,30,40,50];
+
+arr1.splice(5,0,60);
+
+console.log(arr1);
+
