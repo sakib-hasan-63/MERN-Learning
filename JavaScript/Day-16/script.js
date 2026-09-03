@@ -26,3 +26,26 @@ console.log(numbers);
 for(let num of numbers){
     console.log(num);
 }
+
+// map 
+
+const person = new Map();
+person.set('name','harsit');
+person.set('age',20);
+person.set('add','lko');
+console.log(person);
+console.log(person.get('name'));
+
+// Check if key exists
+console.log(person.has('age')); // true
+
+// Get total count
+console.log(person.size); // 3
+
+// Delete a key
+person.delete('add');
+
+// Loop through Map
+for (let [key, value] of person) {
+  console.log(`${key}: ${value}`);
+}
