@@ -1,4 +1,4 @@
-# JavaScript Function Methods: call(), apply(), and bind()
+# JavaScript Function Methods: call(), apply(), and bind(),
 
 ## Introduction
 
