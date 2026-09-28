@@ -1,5 +1,5 @@
 const user = {
-    name: "Sakib Hasan",
+    name: "Hasan",
 
     address: {
         city: "Lucknow",
