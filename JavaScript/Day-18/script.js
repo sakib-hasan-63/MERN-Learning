@@ -1,9 +1,7 @@
 // JavaScript: call(), apply(), and bind()
 
 
-// ----------------------------------------
 // 1. call()
-// ----------------------------------------
 
 const user = {
     name: "Sakib"
@@ -27,9 +25,7 @@ function introduce(age, city) {
 introduce.call(user, 21, "Lucknow");
 
 
-// ----------------------------------------
 // 2. apply()
-// ----------------------------------------
 
 const student = {
     name: "Rahul"
@@ -37,10 +33,7 @@ const student = {
 
 introduce.apply(student, [22, "Delhi"]);
 
-
-// ----------------------------------------
 // 3. bind()
-// ----------------------------------------
 
 const teacher = {
     name: "Aman"
@@ -51,9 +44,7 @@ const teacherIntro = introduce.bind(teacher, 30, "Mumbai");
 teacherIntro();
 
 
-// ----------------------------------------
 // 4. Comparing call(), apply(), bind()
-// ----------------------------------------
 
 const person1 = {
     name: "Sakib"
