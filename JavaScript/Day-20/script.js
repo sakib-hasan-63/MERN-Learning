@@ -1,4 +1,15 @@
-function sayHello(name){
-    console.log(` Hello ${name}`);
+// Class and Object
+class student{
+    constructor(name,age,mark){
+    this.name = name;
+    this.age = age;
+    this.mark = mark;
+    }
+     
+    study(){
+        console.log(` ${this.name} is Studying`);
+    }
 }
-sayHello("sakib");
+
+const s = new student("sakib");
+s.study();
