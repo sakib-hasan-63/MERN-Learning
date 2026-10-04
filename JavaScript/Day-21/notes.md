@@ -15,3 +15,29 @@ sayHello(); // Output: Hello Rahul!
 function sayHello() {
   console.log("Hello Rahul!");
 }
+
+# JavaScript Closures 
+
+## What is a Closure?
+A **closure** is a function that remembers and has access to variables in its outer (enclosing) scope, even after that outer function has finished executing and returned.
+
+* **Core Concept:** An inner function maintains a persistent reference to its lexical environment (outer scope).
+* **Created:** Every time a function is created in JavaScript.
+
+---
+
+## Basic Example
+
+```javascript
+function createCounter() {
+  let count = 0; // Enclosed variable
+
+  return function() {
+    count++;
+    return count;
+  };
+}
+
+const counter = createCounter();
+console.log(counter()); // 1
+console.log(counter()); // 2
