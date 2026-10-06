@@ -84,3 +84,39 @@ const myPromise = new Promise((resolve, reject) => {
 myPromise
   .then(res => console.log(res))
   .catch(err => console.log(err));
+
+
+  # JavaScript Promises
+
+## What is a Promise?
+A **Promise** is an object representing the eventual completion (or failure) of an asynchronous operation and its resulting value.
+
+* Think of it like ordering food online: 
+  1. You place an order (**Pending**).
+  2. The restaurant delivers it (**Fulfilled / Resolved**).
+  3. The restaurant cancels due to unavailability (**Rejected**).
+
+---
+
+## 3 States of a Promise
+1. **Pending:** Initial state, operation is still running.
+2. **Fulfilled:** Operation completed successfully.
+3. **Rejected:** Operation failed due to an error.
+
+---
+
+## Creating and Consuming a Promise
+
+### 1. Producing a Promise
+```javascript
+const fetchUserData = new Promise((resolve, reject) => {
+  let success = true;
+
+  setTimeout(() => {
+    if (success) {
+      resolve({ id: 1, name: "Sakib" });
+    } else {
+      reject("Failed to fetch user data.");
+    }
+  }, 1500);
+});

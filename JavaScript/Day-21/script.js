@@ -50,3 +50,17 @@ async function getUserInfo() {
 }
 
 getUserInfo();
+
+//Promise
+
+const checkEvenNumber = new Promise((resolve, reject) => {
+  let number = 4;
+
+  setTimeout(() => {
+    if (number % 2 === 0) {
+      resolve("Success: Number is even!"); // Jab kaam sahi ho
+    } else {
+      reject("Error: Number is odd!");     // Jab error aaye
+    }
+  }, 1000);
+});
