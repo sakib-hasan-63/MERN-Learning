@@ -49,7 +49,6 @@ console.log(counter()); // 2
 * JavaScript is a **single-threaded language**, meaning it can only execute one thing at a time (it has a single Call Stack).
 * Asynchronous JS allows heavy or time-taking tasks (like API calls, timers) to run in the background without blocking the rest of the code (**non-blocking**).
 
----
 
 ## 2. How It Works (The Mechanism)
 * **Call Stack:** Where code is executed line-by-line.
@@ -72,7 +71,6 @@ console.log(counter()); // 2
   2. `Fulfilled` (completed successfully - `.then()`)
   3. `Rejected` (error occurred - `.catch()`)
 
-```javascript
 const myPromise = new Promise((resolve, reject) => {
   let success = true;
   setTimeout(() => {
@@ -103,12 +101,11 @@ A **Promise** is an object representing the eventual completion (or failure) of 
 2. **Fulfilled:** Operation completed successfully.
 3. **Rejected:** Operation failed due to an error.
 
----
 
 ## Creating and Consuming a Promise
 
 ### 1. Producing a Promise
-```javascript
+
 const fetchUserData = new Promise((resolve, reject) => {
   let success = true;
 
