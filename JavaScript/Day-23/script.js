@@ -12,3 +12,10 @@ function totalSum(num1, num2, ...args){
 
 totalSum(12,43,54,66);
 totalSum(344,444,4,23);
+
+// Speread Operator
+
+let arr1 = [10,20,30,40,50];
+let arr2 = [32,34,54,78];
+let arr3 = [...arr1, ...arr2];
+console.log(arr3);
