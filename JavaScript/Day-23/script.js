@@ -13,9 +13,26 @@ function totalSum(num1, num2, ...args){
 totalSum(12,43,54,66);
 totalSum(344,444,4,23);
 
-// Speread Operator
+// Spread Operator
 
 let arr1 = [10,20,30,40,50];
 let arr2 = [32,34,54,78];
 let arr3 = [...arr1, ...arr2];
 console.log(arr3);
+
+// Object Literals
+
+const user = {
+  name: "Sakib",
+  age: 21,
+  isStudent: true,
+  skills: ["HTML", "CSS", "JavaScript", "React"],
+  address: {
+    city: "Lucknow",
+    country: "India"
+  },
+  // Method inside object
+  greet: function() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+};
