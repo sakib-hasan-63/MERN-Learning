@@ -36,3 +36,13 @@ const user = {
     console.log(`Hello, my name is ${this.name}`);
   }
 };
+
+// Destructuring
+
+let arr = ["sakib", 20 , "Lucknow"];
+
+let [name,age,address] = arr;
+
+console.log(name);
+console.log(age);
+console.log(address);
