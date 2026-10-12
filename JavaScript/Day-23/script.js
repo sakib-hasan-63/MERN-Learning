@@ -46,3 +46,19 @@ let [name,age,address] = arr;
 console.log(name);
 console.log(age);
 console.log(address);
+
+
+// Object Destructuring
+
+let user1 = {
+  name : "sakib",
+  age : 20,
+  add : "lucknow"
+};
+
+let {name:n , age:a, add} = user1;
+
+console.log(n);
+console.log(a);
+console.log(add);
+
