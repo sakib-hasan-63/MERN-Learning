@@ -51,8 +51,8 @@ console.log(address);
 // Object Destructuring
 
 let user1 = {
-  name : "sakib",
-  age : 20,
+  name : "rehan",
+  age : 30,
   add : "lucknow"
 };
 
