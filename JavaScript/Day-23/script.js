@@ -63,4 +63,6 @@ console.log(a);
 console.log(add);
 
 console.log("Day-23");
+console.log("Day-24");
+
 
