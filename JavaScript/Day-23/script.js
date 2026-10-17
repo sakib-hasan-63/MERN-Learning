@@ -62,7 +62,5 @@ console.log(n);
 console.log(a);
 console.log(add);
 
-console.log("Day-23");
-console.log("Day-24");
-console.log("Day-25");
+conso
 
